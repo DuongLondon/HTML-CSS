@@ -30,9 +30,11 @@ html{
 .text-center{
     text-align: center;
 }
+
 .col-full{
     width: 100%;
 }
+
 .col-half{
     width: 50%;
 }
@@ -89,7 +91,6 @@ html{
     left: 0;
     right: 0;
     z-index: 10;
-    overflow: hidden;
 
 }
 #nav{
@@ -103,7 +104,7 @@ html{
     line-height: 46px;
     padding: 0 24px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 #nav li:hover .subnav{
     display: block;
@@ -115,9 +116,6 @@ html{
 #nav .subnav li:hover{
     color: #000;
     background-color: #ccc;
-}
-#nav li:hover a{
-    color: #000;
 }
 #nav .subnav li{
     display: block;
@@ -136,6 +134,13 @@ html{
 }
 #nav-arrow-down{
     font-size: 12px;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .mobile-menu-btn,
@@ -214,7 +219,7 @@ html{
     line-height: 1.2;
 }
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 #content .member-name{
     font-size: 15px;
@@ -260,7 +265,7 @@ html{
 
 /*Places*/
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 .places-img{
     width: 100%;
